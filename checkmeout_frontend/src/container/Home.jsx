@@ -50,7 +50,7 @@ const Home = () => {
 
         {/* Mobile Sidebar Toggle */}
         {toggleSidebar && (
-          <div className="fixed w-4/5 bg-white h-screen overflow-y-auto shadow-md z-10 animate-slide-in top-0 left-0">
+          <div className="fixed w-2/3 bg-white h-screen overflow-y-auto shadow-md z-10 animate-slide-in top-0 left-0">
             <div className="absolute w-full flex justify-end items-center p-2">
               <AiFillCloseCircle
                 fontSize={30}

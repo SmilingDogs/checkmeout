@@ -74,7 +74,7 @@ const LoginContent = () => {
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="absolute flex flex-col justify-center items-center top-0 right-0 left-0 bottom-0 bg-blackOverlay">
+      <div className="absolute flex flex-col justify-center items-center top-0 right-0 left-0 bottom-0 bg-black/70">
         <div className="p-5">
           <img src={logo} width="130px" alt="logo" />
         </div>
