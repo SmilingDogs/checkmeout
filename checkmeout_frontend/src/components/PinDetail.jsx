@@ -65,18 +65,20 @@ const PinDetail = ({ user }) => {
         <div
           className="flex xl:flex-row flex-col m-auto bg-white"
           style={{ maxWidth: "1500px", borderRadius: "32px" }}>
-          <div className=" relative flex justify-center items-center md:items-start shrink-0">
-            <img
-              className="rounded-t-3xl rounded-b-lg w-full max-w-125 object-contain"
-              src={pinDetail?.image && urlFor(pinDetail?.image).url()}
-              alt="user-post"
-            />
-            <a
-              href={`${pinDetail.image.asset.url}?dl=`}
-              download
-              className="absolute right-3 top-3 bg-secondaryColor p-2 text-xl rounded-full flex items-center justify-center text-dark opacity-75 hover:opacity-100">
-              <MdDownloadForOffline />
-            </a>
+          <div className="flex justify-center items-center md:items-start shrink-0">
+            <div className="relative w-full max-w-125">
+              <img
+                className="block rounded-t-3xl rounded-b-lg w-full object-contain"
+                src={pinDetail?.image && urlFor(pinDetail?.image).url()}
+                alt="user-post"
+              />
+              <a
+                href={`${pinDetail.image.asset.url}?dl=`}
+                download
+                className="absolute right-3 top-3 bg-secondaryColor p-2 text-xl rounded-full flex items-center justify-center text-dark opacity-75 hover:opacity-100">
+                <MdDownloadForOffline />
+              </a>
+            </div>
           </div>
           <div className="w-full p-5 flex-1 xl:min-w-155">
             <div className="flex items-center justify-between">
