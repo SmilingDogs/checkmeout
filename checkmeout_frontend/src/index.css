@@ -35,3 +35,7 @@ body {
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+.bg-secondaryColor {
+  background-color: lightcyan;
+}

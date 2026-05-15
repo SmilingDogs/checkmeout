@@ -22,7 +22,7 @@ const Home = () => {
       const query = userQuery(userInfo._id);
       client.fetch(query).then((data) => setUser(data[0]));
     }
-  }, []);
+  }, [userInfo?._id]);
 
   useEffect(() => {
     scrollRef.current.scrollTo(0, 0);
